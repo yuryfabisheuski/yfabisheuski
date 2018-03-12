@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 /**
  * Test.
  *
- * @author Petr Arsentev (parsentev@yandex.ru)
+ * @author Yury Fabisheuski (parsentev@yandex.ru)
  * @version $Id$
  * @since 0.1
  */
@@ -18,8 +18,8 @@ public class CalculateTest {
      * Test echo.
      */ @Test
     public void whenTakeNameThenTreeEchoPlusName() {
-        String input = "Petr Arsentev";
-        String expect = "Echo, echo, echo : Petr Arsentev";
+        String input = "Yury Fabisheuski";
+        String expect = "Echo, echo, echo : Yury Fabisheuski";
         Calculate calc = new Calculate();
         String result = calc.echo(input);
         assertThat(result, is(expect));
