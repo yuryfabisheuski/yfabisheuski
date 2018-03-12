@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 /**
  * Test.
  *
- * @author Yury Fabisheuski (parsentev@yandex.ru)
+ * @author Yury Fabisheuski (fabishevskij@gmail.com)
  * @version $Id$
  * @since 0.1
  */
