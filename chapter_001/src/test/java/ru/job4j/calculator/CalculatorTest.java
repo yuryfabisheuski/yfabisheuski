@@ -1,35 +1,44 @@
 package ru.job4j.calculator;
+
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class CalculatorTest {@Test
-public void whenAddOnePlusOneThenTwo() {
-    Calculator calc = new Calculator();
-    calc.add(1D, 1D);
-    double result = calc.getResult();
-    double expected = 2D;
-    assertThat(result, is(expected));
-}
-    public void whenAddOneSubtractsOneThenZero() {
+public class CalculatorTest {
+    @Test
+    public void whenOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
         calc.add(1D, 1D);
-        double result = calc.subtractResult();
+        double result = calc.getResult();
+        double expected = 2D;
+        assertThat(result, is(expected));
+    }
+
+    @Test
+    public void whenOneSubtractsOneThenZero() {
+        Calculator calc = new Calculator();
+        calc.subtract(1D, 1D);
+        double result = calc.getResult();
         double expected = 0D;
         assertThat(result, is(expected));
-}
+    }
+
+    @Test
     public void whenAddOnedivOneThenTwo() {
         Calculator calc = new Calculator();
-        calc.add(1D, 1D);
-        double result = calc.divResult();
-        double expected = 1D/1D;
+        calc.div(1d, 1d);
+        double result = calc.getResult();
+        double expected = 1D / 1D;
         assertThat(result, is(expected));
-}
+    }
+
+    @Test
     public void whenAddOnemultipleOneThenTwo() {
         Calculator calc = new Calculator();
-        calc.add(1D, 1D);
-        double result = calc.multipleResult();
-        double expected = 1D*1D;
+        calc.multiple(1d, 1d);
+        double result = calc.getResult();
+        double expected = 1D * 1D;
         assertThat(result, is(expected));
-}}
+    }
+}
