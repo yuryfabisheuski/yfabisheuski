@@ -12,11 +12,11 @@ public class Converter {
      * @param value рубли.
      * @return Евро.
      */
-    final static int CURSEURO = 70;
-    final static int CURSUSD = 60;
+    final static int CURS_EURO = 70;
+    final static int CURS_USD = 60;
     public double rubleToEuro(int value) {
 
-        return (double)value / CURSEURO;}
+        return (double) value / CURS_EURO;}
 
     /**
      * Конвертируем рубли в доллары.
@@ -26,7 +26,7 @@ public class Converter {
      */
     public double rubleToDollar(int value1) {
 
-        return (double)value1 / CURSUSD;
+        return (double) value1 / CURS_USD;
     }
 
     /**
@@ -36,7 +36,7 @@ public class Converter {
      * @return Рубли.
      */
     public double euroToRuble(int value2) {
-        return (double)value2 * CURSEURO;
+        return (double) value2 * CURS_EURO;
 
     }
 
@@ -48,7 +48,7 @@ public class Converter {
      */
     public double dollarToRuble(int value3) {
 
-        return (double)value3 * CURSUSD ;
+        return (double) value3 * CURS_USD ;
 
 
     }
