@@ -5,8 +5,11 @@ public class Fit { /**
  * @param height Рост.
  * @return идеальный вес.
  */
-public double manWeight(double height) {
-   return (height-100)*1.15;
+    final static int MAN_COF = 100;
+    final static int WOMAN_COF = 115;
+    final static double COF = 1.15;
+public double manWeight (double height) {
+   return (height-MAN_COF) * COF;
 
 
 }
@@ -16,7 +19,7 @@ public double manWeight(double height) {
      * @param height Рост.
      * @return идеальный вес.
      */
-    public double womanWeight(double height) {
-        return (height-110)*1.15;
+    public double womanWeight (double height) {
+        return (height-WOMAN_COF) * COF;
     }
 }
