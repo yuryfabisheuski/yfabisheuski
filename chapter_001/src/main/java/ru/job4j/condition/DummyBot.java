@@ -10,6 +10,7 @@ public class DummyBot { /**
  * @param question Вопрос от клиента.
  * @return Ответ.
  */
+
 public String answer(String question) {
     String rsl = "Это ставит меня в тупик. Спросите другой вопрос.";
     if ("Привет, Бот.".equals(question)) {
@@ -19,5 +20,6 @@ public String answer(String question) {
     }
     return rsl;
 }
+
 }
 

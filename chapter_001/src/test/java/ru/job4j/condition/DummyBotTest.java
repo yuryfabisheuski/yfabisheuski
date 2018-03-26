@@ -28,6 +28,7 @@ public class DummyBotTest {
         );
     }
 
+
     @Test
     public void whenUnknownBot() {
         DummyBot bot = new DummyBot();
