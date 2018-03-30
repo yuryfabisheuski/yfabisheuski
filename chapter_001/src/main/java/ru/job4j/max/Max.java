@@ -4,7 +4,7 @@ public class Max {
 
 
     public int max(int first, int second) {
-        int max = first < second ? second : first ;
+        int max = first < second ? second : first;
         return max;
 
 
