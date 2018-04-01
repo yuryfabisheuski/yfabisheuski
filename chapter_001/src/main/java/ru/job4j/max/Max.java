@@ -4,17 +4,16 @@ public class Max {
 
 
     public int max(int first, int second) {
-        int max = first < second ? second : first;
-        return max;
+        return first < second ? second : first;
+
+
 
     }
 
     public int max(int first, int second, int third) {
 
         int temp = this.max(first, second);
-        int max = this.max(third, temp);
-        return max;
+        return this.max(third, temp);
 
     }
-
 }
