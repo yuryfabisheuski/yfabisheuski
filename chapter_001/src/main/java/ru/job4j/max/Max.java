@@ -8,10 +8,9 @@ public class Max {
 
     }
 
-    public int max(int first, int second, int third) {
+    public int max1(int first, int second, int third) {
 
-        int temp = this.max(first, second);
-        return this.max(third, temp);
+        return this.max(first, this.max(second, third));
 
     }
 }
