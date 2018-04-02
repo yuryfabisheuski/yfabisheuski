@@ -13,4 +13,5 @@ public class Max {
         return this.max(third, max(first, second));
 
     }
+
 }
